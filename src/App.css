@@ -16,3 +16,8 @@
 .app__date__item {
   margin-right: 20px;
 }
+
+.app__input {
+  font-size: 25px;
+  margin: 5px;
+}
