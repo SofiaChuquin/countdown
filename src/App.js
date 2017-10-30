@@ -4,7 +4,12 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { deadline: 'October 31, 2017' }
+    this.state = { deadline: 'October 31, 2017', newDeadline: '' }
+  }
+
+  changeDeadline() {
+    const { newDeadline } = this.state;
+    this.setState({ deadline: newDeadline })
   }
 
   render() {
@@ -18,8 +23,11 @@ class App extends Component {
           <div className='app__date__item'>20 seconds</div>
         </div>
         <div>
-          <input placeholder='new date' />
-          <button>Submit</button>
+          <input
+            placeholder='new date'
+            onChange={e => this.setState({ newDeadline: e.target.value })}
+          />
+          <button type='button' onClick={() => this.changeDeadline()}>Submit</button>
         </div>
       </div>
     );
