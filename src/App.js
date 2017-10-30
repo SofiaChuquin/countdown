@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className='app'>
         <div className='app__title'>Countdown to {this.state.deadline}</div>
-        <Clock />
+        <Clock deadline={this.state.deadline} />
         <div>
           <input
             placeholder='new date'
