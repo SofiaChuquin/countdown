@@ -2,4 +2,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Countdown
 
-Know the days left to an important date!
+Know the time left to an important date!
