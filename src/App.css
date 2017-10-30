@@ -1,0 +1,18 @@
+.app {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20%;
+}
+
+.app__title {
+  font-size: 50px;
+}
+
+.app__date {
+  display: flex;
+  justify-content: center;
+}
+
+.app__date__item {
+  margin-right: 20px;
+}

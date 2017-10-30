@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <div>Countdown to October 31, 2017</div>
-        <div>
-          <div>14 days</div>
-          <div>30 hours</div>
-          <div>15 minutes</div>
-          <div>20 seconds</div>
+      <div className='app'>
+        <div className='app__title'>Countdown to October 31, 2017</div>
+        <div className='app__date'>
+          <div className='app__date__item'>14 days</div>
+          <div className='app__date__item'>30 hours</div>
+          <div className='app__date__item'>15 minutes</div>
+          <div className='app__date__item'>20 seconds</div>
         </div>
         <div>
           <input placeholder='new date' />
